@@ -59,7 +59,7 @@ for iteration in links_games:
 
     list_elements = [iteration, header1.text, float(star.text.replace(",", ".")), comments.text.split()[0]]
     for x in range(len(titles)):
-      if titles[x].text == "Downloads":
+      if titles[x].text == "Installs":
         list_elements.append(list_others[x])
       if titles[x].text == "Developer":
         for y in list_others[x].split("\n"):
